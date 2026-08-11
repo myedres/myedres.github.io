@@ -236,6 +236,10 @@ button {
   font-size: 17px;
   color: var(--charcoal-2);
 }
+.smallprint {
+  font-size: 15px;
+  color: var(--charcoal);
+}
 .hero-actions {
   display: flex;
   gap: 11px;
