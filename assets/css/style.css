@@ -225,7 +225,6 @@ button {
   font-size: clamp(48px, 5.4vw, 74px);
   font-weight: 700;
   margin: 0 0 18px;
-  max-width: 650px;
 }
 .hero h1 em {
   display: block;
@@ -235,8 +234,7 @@ button {
 }
 .lead {
   font-size: 17px;
-  color: var(--muted);
-  max-width: 580px;
+  color: var(--charcoal-2);
 }
 .hero-actions {
   display: flex;
