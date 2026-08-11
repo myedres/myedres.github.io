@@ -1,0 +1,111 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <div class="rule-label"><span></span><span class="eyebrow">Trusted Precious Metals Buyback</span><span></span></div>
+      <h1>Sell Your Gold</h1>
+      <p class="lead">Looking to sell gold, silver or jewelry for cash? Fill out our form and get a cash offer to sell your precious metals within 30 minutes*. For added convenience you can sell your gold online or visit our store to walk away with cash in hand.</p>
+      <p class="smallprint">*applies Monday to Friday during office hours only (9am to 5.30pm)</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="quote-section" id="getoffer">
+  <div class="wrap">
+    <div><!-- start form -->
+
+      <iframe data-tally-src="https://tally.so/embed/J9jl0X?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="424" frameborder="0" marginheight="0" marginwidth="0" title="Test"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    
+    </div><!-- end form -->
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="wrap trust-bar-inner">
+    <div class="item"><span>✓</span> Live, frequently-updated spot pricing</div>
+    <div class="item"><span>✓</span> Insured, trackable shipping labels</div>
+    <div class="item"><span>✓</span> Price locked at order confirmation</div>
+    <div class="item"><span>✓</span> Paid via e-Transfer, bank deposit, or check</div>
+  </div>
+</div>
+
+<section id="buy" class="section section-ivory">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Buy</span>
+      <h2>We buy all precious metals.</h2>
+      <p>This includes gold and silver jewellery, bullion bars, coins, and scrap or damaged gold. Condition or appearance does not matter — the value of your precious metal is based on weight and purity.</p>
+    </div>
+    <div class="buy-grid reveal">
+      {% for item in site.data.buy_items %}
+      <div class="buy-card">
+        <div class="icon">{% if item.image %}
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+          {% endif %}</div>
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section process-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Process</span>
+      <h2>How do I sell my gold with Top Dollar Gold?</h2>
+    </div>
+    <div class="steps reveal">
+      {% for step in site.data.steps %}
+      <div class="step">
+        <span class="num">{{ step.number }}</span>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section section-ivory">
+  <div class="wrap narrow">
+    <div class="section-head reveal">
+      <!--span class="eyebrow">Questions</span-->
+      <h2>Frequently asked questions.</h2>
+    </div>
+    <div class="faq reveal" id="faqList">
+      {% for f in site.data.faq %}
+      <div class="faq-item{% if f.open %} open{% endif %}">
+        <button class="faq-q" aria-expanded="{% if f.open %}true{% else %}false{% endif %}">
+          {{ f.question }}
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a"{% if f.open %} style="max-height:260px;"{% endif %}>
+          <p>{{ f.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap final-cta-inner">
+    <div>
+      <span class="eyebrow">Ready to Sell Your Gold or Silver?</span>
+      <h2>Fast, fair, and secure precious metals buyback.</h2>
+      <p>Contact our expert team today.</p>
+    </div>
+    <div class="hero-actions">
+      <a href="tel:{{ site.business.phone_href }}" class="btn btn-light">Call Our Buyback Team</a>
+      <a href="mailto:{{ site.business.email }}" class="btn btn-outline-light">Email for a Quote</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/tdg-favicon.svg' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/tdg-favicon-32.png' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/tdg-favicon-180.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+{% include nav.html %}
+
+{{ content }}
+
+{% include footer.html %}
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

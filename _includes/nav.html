@@ -1,0 +1,23 @@
+<header class="site-header">
+  <nav class="nav wrap">
+    <a href="{{ '/' | relative_url }}" class="brand" aria-label="{{ site.title }} home">
+      <img src="{{ '/assets/images/logo-primary.png' | relative_url }}" alt="T$G Top Dollar Gold" class="brand-logo">
+    </a>
+    <div class="nav-links">
+      {% for item in site.data.nav %}
+      <a href="{{ item.anchor }}">{{ item.label }}</a>
+      {% endfor %}
+    </div>
+    <div class="nav-cta">
+      <a href="tel:{{ site.business.phone_href }}" class="nav-phone">{{ site.business.phone }}</a>
+      <a href="#getoffer" class="btn btn-primary nav-button">Get Offer <span aria-hidden="true">→</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    {% for item in site.data.nav %}
+    <a href="{{ item.anchor }}">{{ item.label }}</a>
+    {% endfor %}
+    <a href="tel:{{ site.business.phone_href }}">Call {{ site.business.phone }}</a>
+  </div>
+</header>

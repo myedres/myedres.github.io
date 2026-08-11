@@ -1,0 +1,12 @@
+- image: "/assets/images/jewelry.png"
+  title: Gold & Silver Jewelry
+  text: Rings, chains, bracelets, and earrings. Condition or appearance doesn't matter — value is based on weight and purity.
+- image: "/assets/images/bars.png"
+  title: Bullion Bars & Coins
+  text: Investment bars and coins in any quantity, valued against live spot pricing.
+- image: "/assets/images/scrap.png"
+  title: Scrap & Damaged Gold
+  text: Broken clasps, mismatched pieces, and damaged items are still accepted and valued by weight and purity.
+- image: "/assets/images/platinum.png"
+  title: Platinum & Palladium
+  text: Beyond gold and silver, we also buy platinum and palladium items, subject to purity and market demand.

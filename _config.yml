@@ -1,0 +1,30 @@
+title: Top Dollar Gold
+tagline: Sell Your Gold & Silver for Cash
+description: >-
+  Trusted precious metals buyback. Turn your gold and silver jewelry, coins,
+  scrap, and bullion into cash with a fast, secure, and transparent
+  ship-in process. Get fair market prices and trusted service.
+url: "https://www.topdollargold.ca"
+baseurl: ""
+
+# Business info, referenced throughout the site via site.business.*
+business:
+  phone: "(416) 477-3793"
+  phone_href: "+14164773793"
+  email: "getcash@topdollargold.ca"
+  address: "7163 Yonge St,<br/>Thornhill, ON L3T 0C6"
+  spot_price_oz: 6059
+  payout_rate: 0.80
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/

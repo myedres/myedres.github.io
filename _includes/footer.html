@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="{{ '/assets/images/logo-primary.png' | relative_url }}" alt="T$G Top Dollar Gold" class="footer-logo">
+        <p>Trusted precious metals buyback. Fair, transparent offers for gold, silver, platinum, and palladium — shipped securely, paid quickly.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Learn</h5>
+        <a href="#buy">What We Buy</a>
+        <a href="#how">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col contact-col">
+        <h5>Contact</h5>
+        <a href="tel:{{ site.business.phone_href }}">{{ site.business.phone }}</a>
+        <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+        <p>{{ site.business.address }}</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</span>
+      <span>Estimates shown are non-binding and based on posted spot pricing. Final offers made at booking.</span>
+    </div>
+  </div>
+</footer>
