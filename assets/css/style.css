@@ -633,7 +633,7 @@ button {
   bottom: -52px;
   width: 210px;
   height: 230px;
-  background: url("../images/maple-leaf-watermark.svg") center/contain no-repeat;
+  background: url("../images/maple-leaf-wm.svg") center/contain no-repeat;
   opacity: 0.6;
   pointer-events: none;
 }
