@@ -13,8 +13,11 @@ business:
   phone_href: "+14164773793"
   email: "getcash@topdollargold.ca"
   address: "7163 Yonge St,<br/>Thornhill, ON L3T 0C6"
-  spot_price_oz: 6059
-  payout_rate: 0.80
+  payout_24K: 0.812
+  payout_22K: 0.774
+  payout_18K: 0.632
+  payout_14K: 0.487
+  payout_10K: 0.347
 
 markdown: kramdown
 permalink: pretty
@@ -28,3 +31,5 @@ exclude:
   - README.md
   - vendor/
   - node_modules/
+
+gold_spot_price_api_url: "https://api.gold-api.com/price/XAU/CAD"

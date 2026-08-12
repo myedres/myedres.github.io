@@ -1,5 +1,5 @@
 :root {
-  --white: #fffff;
+  --white: #ffffff;
   --black: #000000;
   --dark: #011010;
   --ivory: #f8f5ee;
@@ -117,6 +117,19 @@ button {
 .nav-links a:hover:after {
   right: 0;
 }
+.nav-link-mobile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+.nav-link-mobile a {
+  position: relative;
+}
 .nav-cta {
   display: flex;
   align-items: center;
@@ -203,7 +216,7 @@ button {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.4fr 0.6fr;
   align-items: center;
   gap: 52px;
 }
@@ -283,7 +296,7 @@ button {
   object-fit: cover;
 }
 .price-card {
-  position: absolute;
+  position:relative;
   right: 24px;
   top: 24px;
   background: rgba(255, 255, 255, 0.96);
